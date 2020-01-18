@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Color Me</string>
+    <string name="go">GO</string>
+    <string name="canvasConetentDescription">Mini Paint is a simple line drawing app.
+        Drag your fingers to draw. Rotate the phone to clear </string>
+    <string name="color_dialog_title">choose color</string>
+</resources>
