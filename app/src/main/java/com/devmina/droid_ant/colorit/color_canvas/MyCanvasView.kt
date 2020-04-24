@@ -53,21 +53,21 @@ class MyCanvasView @JvmOverloads constructor(
 
     }
 
-    fun getBitmap(): Bitmap {
-        //this.measure(100, 100);
-        //this.layout(0, 0, 100, 100);
-        /*this.isDrawingCacheEnabled = true
-        this.buildDrawingCache()*/
-       // val bitmap = this.drawToBitmap()
-
-        /*val bmp = Bitmap.createBitmap(this.drawingCache)
-        this.isDrawingCacheEnabled = false*/
-
-       val bitmap =  this.getDrawingCache();
-        this.setDrawingCacheEnabled(true);
-
-        return bitmap
-    }
+//    fun getBitmap(): Bitmap {
+//        //this.measure(100, 100);
+//        //this.layout(0, 0, 100, 100);
+//        /*this.isDrawingCacheEnabled = true
+//        this.buildDrawingCache()*/
+//       // val bitmap = this.drawToBitmap()
+//
+//        val bmp = Bitmap.createBitmap(this.drawingCache)
+//        this.isDrawingCacheEnabled = false
+//
+//      /* val bitmap =  this.getDrawingCache();
+//        this.setDrawingCacheEnabled(true);*/
+//
+//        return bmp
+//    }
 
     private val paint= Paint(Paint.DITHER_FLAG).apply {
          color = Color.RED
@@ -118,17 +118,11 @@ class MyCanvasView @JvmOverloads constructor(
 
         canvas.drawColor(Color.WHITE)
         canvas.drawBitmap(srcBitmap,0f,0f,mBitmapPaint)
-        val inset = 40f
-       /* for (p in paths) {
-            canvas.drawPath(p, paint)
-        }*/
+
         canvas.drawPath(path, paint)
 
 
 
-        //draw a frame around the canvas
-        //canvas.drawRect(frame,paint)
-        //canvas.drawBitmap(srcBitmap,0f,0f,null)
     }
 
 
@@ -180,15 +174,7 @@ class MyCanvasView @JvmOverloads constructor(
         //toast the user
     }
 
-    fun onClickRedo() {
-        if (undonePaths.size > 0) {
-            paths.add(undonePaths.removeAt(undonePaths.size - 1))
-           invalidate()
-        } else {
-
-        }
-        //toast the user
-    }
+ 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         motionTouchEventX=event.x
         motionTouchEventY=event.y

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+       >
     <data>
            <variable name="color" type="com.devmina.droid_ant.colorit.color_canvas.ColorViewModel"/>
 
@@ -49,10 +49,11 @@
                 android:id="@+id/img" android:layout_marginTop="8dp"
                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="1.0" android:background="@color/backgroundColor"/>
+                app:layout_constraintVertical_bias="1.0" android:background="@color/backgroundColor"
+                android:contentDescription="@string/color_image" />
 
 
-        <ImageView
+       <!-- <ImageView
                 android:layout_width="45dp"
                 android:layout_height="47dp"
                 android:id="@+id/save" app:srcCompat="@drawable/save"
@@ -60,7 +61,7 @@
                 android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/seekBar"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/parentButton" android:layout_marginStart="8dp"
-                app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.17"/>
+                app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.17"/> !-->
 
         <com.lukelorusso.verticalseekbar.VerticalSeekBar
                 android:id="@+id/seekBar"
@@ -70,15 +71,15 @@
                 app:vsb_bar_corner_radius="15dp"
                 app:vsb_bar_width="60dp"
                 app:vsb_bar_background="#eeeeee"
-                app:vsb_bar_progress_gradient_end="#4dd0e1"
-                app:vsb_bar_progress_gradient_start="#03a2ba"
+                app:vsb_bar_progress_gradient_end="#FF0000"
+                app:vsb_bar_progress_gradient_start="#FF0000"
                 app:vsb_max_placeholder_position="inside"
                 app:vsb_min_placeholder_position="inside"
                 app:vsb_progress="30"
                 app:vsb_show_thumb="true"
+                app:vsb_thumb_container_tint="#000000"
                 app:vsb_thumb_container_corner_radius="5dp"
                 app:vsb_use_thumb_to_set_progress="true"
-                app:vsb_thumb_placeholder_src="@drawable/brush"
                 android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/img"
                 app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,40 +100,44 @@
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         android:id="@+id/yellow"
-                        app:srcCompat="@drawable/p_yellow"/>
+                        app:srcCompat="@drawable/p_yellow"
+                        android:contentDescription="@string/yellow" />
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         app:srcCompat="@drawable/p_viol"
-                        android:id="@+id/viol"/>
+                        android:id="@+id/viol"
+                        android:contentDescription="@string/viol" />
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         app:srcCompat="@drawable/p_red"
-                        android:id="@+id/red"/>
+                        android:id="@+id/red"
+                        android:contentDescription="@string/red" />
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         app:srcCompat="@drawable/p_purple"
                         android:id="@+id/purple"
-                />
+                        android:contentDescription="@string/purple" />
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         app:srcCompat="@drawable/p_orange"
                         android:id="@+id/orange"
-                />
+                        android:contentDescription="@string/orange" />
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         app:srcCompat="@drawable/p_green"
-                        android:id="@+id/green"/>
+                        android:id="@+id/green"
+                        android:contentDescription="@string/green" />
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/pencil_size"
                         android:id="@+id/blue"
                         app:srcCompat="@drawable/p_blue"
-                />
+                        android:contentDescription="@string/blue" />
                 <!-- </androidx.core.widget.NestedScrollView> !-->
 
             </LinearLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
 >
     <data>
         <variable name="imageChild" type="com.devmina.droid_ant.colorit.model.ListofImages"/>
@@ -24,7 +23,7 @@
                 android:layout_height="92dp"
                 android:layout_marginEnd="@dimen/item_margin"
                 app:imageUrl="@{imageChild.image}"
-             />
+                android:contentDescription="@string/choosen_image" />
 
 
     </androidx.cardview.widget.CardView>
