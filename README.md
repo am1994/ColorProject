@@ -19,11 +19,11 @@ I build this app for learning about architecture compenents, I use in this app: 
  
 ## Usage 
 
-you need just change the ADS ID And Application ID: </br>
+you just need  change the ADS ID And Application ID : </br>
 
 1. ADS ID:
 
-  - open color_canvas -> Color.kt then change the Test ADS ID with yours  </br>
+   - open color_canvas -> Color.kt then change the Test ADS ID with yours  </br>
 ` mInterstitialAd.adUnitId = "ca-app-pub-3940256099942544/1033173712" ` </br>
 
 2. Application ID 
