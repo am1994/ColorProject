@@ -174,7 +174,7 @@ class MyCanvasView @JvmOverloads constructor(
         //toast the user
     }
 
- 
+
     override fun onTouchEvent(event: MotionEvent): Boolean {
         motionTouchEventX=event.x
         motionTouchEventY=event.y
