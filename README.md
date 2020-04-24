@@ -16,7 +16,18 @@ I build this app for learning about architecture compenents, I use in this app: 
   <img src="https://github.com/am1994/ColorProject/blob/master/Choose%20your%20best%20hero%20cartoon%20(3).png" width="300" />
 </p>
 
-# License
+## usage 
+you need just change the ADS ID And Application ID: </br>
+- ADS ID:
+open color_canvas -> Color.kt then change the Test ADS ID with yours  </br>
+' mInterstitialAd.adUnitId = "ca-app-pub-3940256099942544/1033173712" ' </br>
+- Application ID 
+open AndroidManifest.xml then change 'APPLICATION_ID' with yours </br>
+'<meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="APPLICATION_ID"/> '  
+
+## License
 
 MIT License
 
